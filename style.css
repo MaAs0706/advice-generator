@@ -13,7 +13,7 @@ body {
     background-color: hsl(217, 19%, 24%); /* Dark Blue */
     border-radius: 10px;
     padding: 2rem;
-    max-width: 500px;
+    max-width: 400px;
     text-align: center;
     position: relative;
     
@@ -26,4 +26,53 @@ body {
     letter-spacing: 0.2rem ; 
     text-transform : uppercase ; 
     margin-bottom : 1.5rem
+  }
+
+  .advice-text {
+    color: hsl(193, 38%, 86%); /* Light Cyan */
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  .divider {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .dice-button {
+    background-color: hsl(150, 100%, 66%); /* Neon Green */
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  dice-button:hover {
+    background-color: hsl(150, 100%, 70%);
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      max-width: 90%;
+      padding: 1.5rem;
+    }
+
+    .advice-text {
+      font-size: 24px;
+    }
+  
+    .divider {
+      content: url('images/pattern-divider-mobile.svg');
+    }
   }
