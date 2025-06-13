@@ -1,0 +1,29 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%); /* Dark Grayish Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+
+  .card {
+    background-color: hsl(217, 19%, 24%); /* Dark Blue */
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .advice-id {
+    color : hsl(150,100%,66%);
+    font-size : 0.8rem ; 
+    letter-spacing: 0.2rem ; 
+    text-transform : uppercase ; 
+    margin-bottom : 1.5rem
+  }
