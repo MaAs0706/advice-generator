@@ -2,7 +2,7 @@ const adviceIdElement = document.getElementById('advice-id');
 const adviceTextElement = document.getElementById('advice-text');
 const diceButton = document.querySelector('.dice-button');
 
-async function fetchadvise (){
+async function fetchadvice (){
     try{
         const response = await fetch('https://api.adviceslip.com/advice');
         const data = await response.json();
@@ -17,3 +17,8 @@ async function fetchadvise (){
        }
     
 }
+
+fetchadvice();
+
+
+diceButton.addEventListener('click' , fetchadvice)
