@@ -57,11 +57,12 @@ body {
     transition: background-color 0.3s;
   }
 
-  dice-button:hover {
-    background-color: hsl(150, 100%, 70%);
-    box-shadow: 0 0 20px hsl(150, 100%, 66%);
-  }
-
+  .dice-button:hover {
+    background-color: hsl(150, 100%, 70%); /* Lighter neon green */
+    box-shadow: 0 0 20px hsl(150, 100%, 66%); /* Neon green glow */
+}
+  
+  
   @media (max-width: 600px) {
     .card {
       max-width: 90%;
